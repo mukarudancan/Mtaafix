@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MtaaFix | Community Solutions</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="background-emblem" aria-hidden="true">
+    <svg viewBox="0 0 320 360" xmlns="http://www.w3.org/2000/svg">
+      <g fill="none" stroke="#b78225" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M62 315 257 48M258 315 63 48" stroke-width="7"/>
+        <path d="m258 48 3-38 20 31-24 7ZM63 48 60 10 40 41l23 7Z"
+              fill="#b78225" stroke-width="3"/>
+      </g>
+      <defs>
+        <clipPath id="shield-shape">
+          <path d="M160 59c43 0 78 9 99 25l-12 145c-5 47-40 83-87 109-47-26-82-62-87-109L61 84c21-16 56-25 99-25Z"/>
+        </clipPath>
+      </defs>
+      <g clip-path="url(#shield-shape)">
+        <path fill="#176b45" d="M55 55h210v280H55z"/>
+        <path fill="#111" d="M55 112h210v39H55z"/>
+        <path fill="#c62828" d="M55 156h210v83H55z"/>
+        <path fill="#111" d="M55 244h210v39H55z"/>
+        <path fill="#fff" d="M55 151h210v5H55zm0 88h210v5H55z"/>
+        <path fill="#fff" opacity=".88"
+              d="M160 146c-17 18-17 44 0 61 17-17 17-43 0-61Zm0 11c8 12 8 27 0 39-8-12-8-27 0-39Z"/>
+      </g>
+      <path d="M160 59c43 0 78 9 99 25l-12 145c-5 47-40 83-87 109-47-26-82-62-87-109L61 84c21-16 56-25 99-25Z"
+            fill="none" stroke="#b78225" stroke-width="8" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <header>
+    <h1>🌍 MtaaFix</h1>
+    <p>See a problem. Report it. Improve your community.</p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#report">Report a Problem</a>
+      <a href="#reports">Community Reports</a>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <section class="intro">
+      <h2>Let's make our community better!</h2>
+      <p>
+        Help identify problems across Kenya, in your county, constituency,
+        ward and local area.
+        Share an issue and support the problems that need attention first.
+      </p>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        Total Reports
+        <strong id="total">0</strong>
+      </div>
+
+      <div class="stat">
+        Still Open
+        <strong id="open">0</strong>
+      </div>
+
+      <div class="stat">
+        Resolved
+        <strong id="resolved">0</strong>
+      </div>
+    </section>
+
+    <div class="layout">
+
+      <section class="panel" id="report">
+        <h2>Report a Problem</h2>
+
+        <form id="reportForm">
+
+          <label for="county">County</label>
+          <select id="county" required>
+            <option value="">Choose a county</option>
+            <option value="Baringo">Baringo</option>
+            <option value="Bomet">Bomet</option>
+            <option value="Bungoma">Bungoma</option>
+            <option value="Busia">Busia</option>
+            <option value="Elgeyo-Marakwet">Elgeyo-Marakwet</option>
+            <option value="Embu">Embu</option>
+            <option value="Garissa">Garissa</option>
+            <option value="Homa Bay">Homa Bay</option>
+            <option value="Isiolo">Isiolo</option>
+            <option value="Kajiado">Kajiado</option>
+            <option value="Kakamega">Kakamega</option>
+            <option value="Kericho">Kericho</option>
+            <option value="Kiambu">Kiambu</option>
+            <option value="Kilifi">Kilifi</option>
+            <option value="Kirinyaga">Kirinyaga</option>
+            <option value="Kisii">Kisii</option>
+            <option value="Kisumu">Kisumu</option>
+            <option value="Kitui">Kitui</option>
+            <option value="Kwale">Kwale</option>
+            <option value="Laikipia">Laikipia</option>
+            <option value="Lamu">Lamu</option>
+            <option value="Machakos">Machakos</option>
+            <option value="Makueni">Makueni</option>
+            <option value="Mandera">Mandera</option>
+            <option value="Marsabit">Marsabit</option>
+            <option value="Meru">Meru</option>
+            <option value="Migori">Migori</option>
+            <option value="Mombasa">Mombasa</option>
+            <option value="Murang'a">Murang'a</option>
+            <option value="Nairobi">Nairobi</option>
+            <option value="Nakuru">Nakuru</option>
+            <option value="Nandi">Nandi</option>
+            <option value="Narok">Narok</option>
+            <option value="Nyamira">Nyamira</option>
+            <option value="Nyandarua">Nyandarua</option>
+            <option value="Nyeri">Nyeri</option>
+            <option value="Samburu">Samburu</option>
+            <option value="Siaya">Siaya</option>
+            <option value="Taita-Taveta">Taita-Taveta</option>
+            <option value="Tana River">Tana River</option>
+            <option value="Tharaka-Nithi">Tharaka-Nithi</option>
+            <option value="Trans Nzoia">Trans Nzoia</option>
+            <option value="Turkana">Turkana</option>
+            <option value="Uasin Gishu">Uasin Gishu</option>
+            <option value="Vihiga">Vihiga</option>
+            <option value="Wajir">Wajir</option>
+            <option value="West Pokot">West Pokot</option>
+          </select>
+
+          <label for="title">Problem Title</label>
+          <input id="title"
+                 placeholder="e.g. Broken streetlight"
+                 required maxlength="80">
+
+          <label for="category">Category</label>
+          <select id="category" required>
+            <option value="">Choose a category</option>
+            <option>Roads</option>
+            <option>Garbage</option>
+            <option>Water</option>
+            <option>Streetlights</option>
+            <option>Drainage</option>
+            <option>Other</option>
+          </select>
+
+          <label for="constituency">Constituency</label>
+          <input id="constituency"
+                 placeholder="e.g. Westlands"
+                 required maxlength="80">
+
+          <label for="ward">Ward</label>
+          <input id="ward"
+                 placeholder="e.g. Parklands/Highridge"
+                 required maxlength="80">
+
+          <label for="location">Area / Specific Location</label>
+          <input id="location"
+                 placeholder="e.g. Near the local school or along Ngong Road"
+                 required maxlength="100">
+
+          <label for="description">Description</label>
+          <textarea id="description" rows="4"
+                    placeholder="Explain the problem..."
+                    required maxlength="500"></textarea>
+
+          <button type="submit">Submit Report</button>
+        </form>
+      </section>
+
+      <section id="reports">
+        <h2>Community Reports</h2>
+
+        <select id="filter" class="filter"
+                aria-label="Filter reports by category">
+          <option value="All">All Categories</option>
+          <option>Roads</option>
+          <option>Garbage</option>
+          <option>Water</option>
+          <option>Streetlights</option>
+          <option>Drainage</option>
+          <option>Other</option>
+        </select>
+
+        <div id="reportList"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>MtaaFix — Small actions, better communities.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
